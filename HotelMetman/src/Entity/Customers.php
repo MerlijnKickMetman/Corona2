@@ -270,4 +270,8 @@ class Customers
 
         return $this;
     }
+
+    public function __toString() {
+        return $this->getFullName();
+    }
 }
