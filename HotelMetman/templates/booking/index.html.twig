@@ -3,6 +3,18 @@
 {% block title %}Booking index{% endblock %}
 
 {% block body %}
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Menu
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="{{ path('customers_index') }}">Customers</a>
+    <a class="dropdown-item" href="{{ path('booking_index') }}">Booking</a>
+    <a class="dropdown-item" href="{{ path('food_orders_index') }}">food orders</a>
+    <a class="dropdown-item" href="{{ path('restaurant_index') }}">Restaurant</a>
+    <a class="dropdown-item" href="{{ path('rooms_index') }}">Rooms</a>
+  </div>
+</div>
     <h1>Booking index</h1>
 
     <table class="table">
